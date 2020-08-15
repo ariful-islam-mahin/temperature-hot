@@ -1,5 +1,5 @@
 function weatherData(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ebe44e19cc28eede34234cb551308344&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ebe44e19cc28eede34234cb551308344&units=metric`)
     .then(res => res.json())
     .then(json => showWeatherData(json));
     }
